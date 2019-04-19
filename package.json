@@ -1,6 +1,6 @@
 {
   "name": "react-native-simple-chatbot",
-  "version": "0.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,6 +10,18 @@
     "type": "git",
     "url": "git+https://github.com/HamzaKV/ChatBot.git"
   },
+  "keywords": [
+    "react-native",
+    "react-native-component",
+    "react native",
+    "mobile",
+    "ios",
+    "android",
+    "ui",
+    "chatbot",
+    "simple-chatbot",
+    "json-chatbot"
+  ],
   "author": "hamzav <hamzakv333@gmail.com>",
   "license": "MIT",
   "bugs": {
