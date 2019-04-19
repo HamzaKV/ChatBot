@@ -1,7 +1,5 @@
 # ChatBot
 
-<a href="https://badge.fury.io/js/react-native-simple-chatbot"><img src="https://badge.fury.io/js/react-native-simple-chatbot.svg" alt="npm version" height="18"></a>
-
 A Simple react-native Chat Bot.
 
 ## Getting Started
