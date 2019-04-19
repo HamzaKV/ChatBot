@@ -35,6 +35,7 @@ npm install react-native-simple-chatbot
 ### Props
 
 | Name | Type | Required | Default | Description |
+| --- | --- | --- | --- | --- |
 | `ChatBotID` | `PropTypes.string` | Yes |  | Unique ID for the Chat Bot. |
 | `questions` | `PropTypes.array` | Yes |  | Array for the Chat Bot questions. |
 | `chatHeader` | `PropTypes.string` | Yes |  | Small text prior to asking questions. |
@@ -48,6 +49,7 @@ npm install react-native-simple-chatbot
 ### Steps
 
 | Name | Type | Required | Description |
+| --- | --- | --- | --- |
 | `id` | `string` | Yes | Unique ID for step |
 | `message` | `string` | No | CPU message to the user. |
 | `user` | `boolean` | Yes | Boolean to determine wheter user input is required. |
@@ -62,6 +64,7 @@ npm install react-native-simple-chatbot
 #### Options
 
 | Name | Type | Required | Description |
+| --- | --- | --- | --- |
 | `value` | `string` | Yes | Value for choice. |
 | `trigger` | `string` | Yes | Unique ID for the Chat Bot to determine next step. |
 | `imageU` | `string` | No | Image id (from images.js) for unselected choice. |
@@ -70,6 +73,7 @@ npm install react-native-simple-chatbot
 #### Slider
 
 | Name | Type | Required | Description |
+| --- | --- | --- | --- |
 | `value` | `number` | Yes | Value for choice. |
 | `trigger` | `string` | Yes | Unique ID for the Chat Bot to determine next step. |
 | `marker` | `string` | Yes | Value saved by ChatBot. |
