@@ -97,7 +97,7 @@ customComponents(customID) {
 <ChatBot
     ref="ChatBot"
     ChatBotID="ChatBot ID"
-    questions={ChatFile.checkin} 
+    questions={ChatFile.chatbot} 
     chatHeader={(new Date()).toDateString()}
     customComponentCallback={this.customComponents.bind(this)}
     userIcon={images.UserIcon}

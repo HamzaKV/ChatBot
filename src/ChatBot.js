@@ -296,4 +296,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export { ChatBot };
+export default ChatBot;
