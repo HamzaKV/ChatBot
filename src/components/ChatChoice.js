@@ -7,7 +7,6 @@ import {
     TouchableOpacity,
 } from 'react-native';
 import Button from './ChatButton';
-import images from '../../images/images';
 
 const ChatChoice = ({ text, image, onPress, style, imageStyle, disabled }) => {
     if (image !== '') {
@@ -18,7 +17,7 @@ const ChatChoice = ({ text, image, onPress, style, imageStyle, disabled }) => {
                     disabled={disabled} 
                     onPress={onPress}
                 >
-                    <Image source={images[image]} style={imageStyle} />
+                    <Image source={image} style={imageStyle} />
                     <Text>{text}</Text>
                 </TouchableOpacity>
             </View>

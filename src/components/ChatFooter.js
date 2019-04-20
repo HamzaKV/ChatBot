@@ -52,6 +52,7 @@ export default class ChatFooter extends Component {
                         multipleOptionsSelect={this.props.multipleOptionsSelect}
                         array={this.props.options} 
                         callback={this.chatChoiceCallback.bind(this)} 
+                        imagesArray={this.props.imagesArray}
                     />
                 );
             default:

@@ -7,8 +7,6 @@ import {
 import ChatChoice from './ChatChoice';
 import Button from './ChatButton';
 
-//const windowWidth = Dimensions.get('window').width;
-
 class ChatChoiceContainer extends React.Component {
 
     state = {
@@ -22,10 +20,9 @@ class ChatChoiceContainer extends React.Component {
             renderedChoices: this.props.array.map((choice, key) => (
                 <ChatChoice 
                     text={choice.value} 
-                    image={choice.imageU} 
+                    image={this.props.imagesArray[choice.imageU]} 
                     key={key}
                     onPress={() => this.onChoicePress(choice)}
-                    // imageStyle={{ width: ((windowWidth) / ((this.props.array.length / 2) + 1)) }}
                     imageStyle={{ alignSelf: 'stretch' }} 
                 />
             ))
@@ -68,7 +65,7 @@ class ChatChoiceContainer extends React.Component {
                         return (
                             <ChatChoice 
                                 text={choice.value} 
-                                image={choice.imageU} 
+                                image={this.props.imagesArray[choice.imageU]} 
                                 key={key}
                                 style={{ elevation: 5 }}
                                 onPress={() => this.onRemoveChoicePress(choice)} 
@@ -81,7 +78,7 @@ class ChatChoiceContainer extends React.Component {
                     return (
                         <ChatChoice 
                             text={choice.value} 
-                            image={choice.imageS} 
+                            image={this.props.imagesArray[choice.imageS]} 
                             key={key}
                             onPress={() => this.onRemoveChoicePress(choice)} 
                             imageStyle={{ 
@@ -93,7 +90,7 @@ class ChatChoiceContainer extends React.Component {
                 return (
                     <ChatChoice 
                         text={choice.value} 
-                        image={choice.imageU} 
+                        image={this.props.imagesArray[choice.imageU]} 
                         key={key}
                         style={{ backgroundColor: '#F8F8F8' }}
                         onPress={() => this.onChoicePress(choice)} 

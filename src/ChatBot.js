@@ -282,6 +282,7 @@ class ChatBot extends Component {
                     maximumValue={this.state.sliderMax}
                     sliderArray={this.state.currentChat.slider}
                     chatInputButtonDisabled={this.state.chatInputButtonDisabled}
+                    imagesArray={this.props.imagesArray}
                 />
             </View>
         );

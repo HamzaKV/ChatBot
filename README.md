@@ -39,6 +39,7 @@ npm install react-native-simple-chatbot
 | `chatHeader` | `PropTypes.string` | Yes |  | Small text prior to asking questions. |
 | `userIcon` | `PropTypes.object` | Yes |  | User Icon image source. |
 | `cpuIcon` | `PropTypes.object` | Yes |  | CPU Icon image source. |
+| `imagesArray` | `PropTypes.object` | Yes |  | Array of React.Component images |
 | `ref` | `PropTypes.string` | No |  | Used for referencing in parent react-native js file. |
 | `customComponentCallback` | `PropTypes.func` | No |  | Function to add and handle custom components. |
 | `onChatEndCallback` | `PropTypes.func` | No |  | Function to handle chat completion. |
@@ -101,6 +102,7 @@ customComponents(customID) {
     customComponentCallback={this.customComponents.bind(this)}
     userIcon={images.UserIcon}
     cpuIcon={images.CPUIcon}
+    imagesArray={images}
 />
 ```
 
