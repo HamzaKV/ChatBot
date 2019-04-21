@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ChatInput from './ChatInput';
-import ChatChoiceContiner from './ChatChoiceContainer';
+import ChatChoiceContainer from './ChatChoiceContainer';
 import SliderContainer from './SliderContainer';
 
 export default class ChatFooter extends Component {
@@ -41,14 +41,12 @@ export default class ChatFooter extends Component {
                         minimumValue={1}
                         maximumValue={this.props.maximumValue}
                         callback={this.sliderCallback.bind(this)}
-                        // values={this.props.sliderArray[0].values}
-                        // markers={this.props.sliderArray[0].markers}
                         slider={this.props.sliderArray} 
                     />
                 );
             case 'choices':
                 return (
-                    <ChatChoiceContiner
+                    <ChatChoiceContainer
                         multipleOptionsSelect={this.props.multipleOptionsSelect}
                         array={this.props.options} 
                         callback={this.chatChoiceCallback.bind(this)} 
