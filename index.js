@@ -1,3 +1,3 @@
 import ChatBot from './src/ChatBot';
 
-export { ChatBot };
+export default ChatBot;
